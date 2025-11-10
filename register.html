@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a new Adopt Addict account</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="first_name">First name:</label><br>
+        <input type="text" id="first_name" name="first_name"><br><br>
+
+        <label for="last_name">Last name:</label><br>
+        <input type="text" id="last_name" name="last_name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="num">Cell number:</label><br>
+        <input type="text" id="num" name="num"><br><br>
+
+        <label for="pic">Upload your image:</label><br>
+        <input type="file" id="pic" name="pic" accept="image/*"><br><br>
+
+        <input type="radio" id="sex1" name="sex" value="male">
+        <label for="sex1">Male</label>
+
+        <input type="radio" id="sex2" name="sex" value="female">
+        <label for="sex2">Female</label>
+        <br><br>
+
+        <label>Enter your city:</label>
+        <input list="city" name="city">
+        <datalist id="city">
+            <option>Dhaka</option>
+            <option>Chittagong</option>
+            <option>Barisal</option>
+            <option>Khulna</option>
+            <option>Sylhet</option>
+            <option>Rajshahi</option>
+            <option>Rangpur</option>
+            <option>Dinajpur</option>
+        </datalist><br><br>
+
+        <label>Select the type of pets you have adopted before:</label><br>
+        <input type="checkbox" id="opt1" name="type" value="cat">
+        <label for="opt1">Cat</label>
+
+        <input type="checkbox" id="opt2" name="type" value="dog">
+        <label for="opt2">Dog</label>
+
+        <input type="checkbox" id="opt3" name="type" value="birds">
+        <label for="opt3">Birds</label>
+
+        <input type="checkbox" id="opt4" name="type" value="reptiles">
+        <label for="opt4">Reptiles</label>
+        <br><br>
+
+        <label for="numsofpet">Number of pets you currently have:</label><br>
+        <select id="numsofpet" name="numsofpet">
+            <option value="none">None</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="morethan5">More than 5</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </fieldset>
+</form>
+</body>
+</html>

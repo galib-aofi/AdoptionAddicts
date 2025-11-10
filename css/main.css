@@ -1,0 +1,41 @@
+nav>ul{
+    display:flex;
+    width:2000px;
+    height:200px;
+
+
+}
+.na{
+    display:flex;
+   flex-flow:row wrap;
+    padding:10px;
+    background-color: grey;
+    justify-content: center;
+}
+aside>ul{
+    display:block;
+}
+aside>ul>li{
+    display:flex;
+    flex-direction:column;
+    float:none;
+    list-style-type:none;
+    background-color: darkcyan;
+    justify-content: flex-start;
+    width:200px;
+    height:100px;
+    padding:50px;
+
+}
+a:link{
+color:blue;
+}
+a:visited{
+color:purple;
+}
+a:hover{
+color:yellow;
+}
+a:active{
+    color:red;
+}

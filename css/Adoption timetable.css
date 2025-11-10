@@ -1,0 +1,19 @@
+table{
+    border-style: double;
+    border-collapse:collapse;
+}
+td,th{
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+}
+
+/*th:nth-child(even){
+    background-color: palevioletred;
+}*/
+tr:nth-of-type(even)>td:nth-child(even){
+background-color: red;
+}
+tr:nth-of-type(odd)>th:nth-of-type(odd){
+    background-color: orange;
+}

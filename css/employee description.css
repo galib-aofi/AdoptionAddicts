@@ -1,0 +1,29 @@
+table{
+    border-style: solid;
+    border-width: 1px;
+     border-collapse: collapse;
+    width: 70%;
+    height: 400px;
+}
+tr,th,td{
+    border-style: solid;
+    border-width: 1px;
+    border-color: blue;
+    padding: 10px;
+    text-align: center;
+    background-color: brown;
+
+}
+.clr{
+    background-color: cyan;
+
+}
+.clr:hover{
+    background-color: yellow;
+}
+th{
+    background-color:purple;
+}
+td:hover{
+    background-color: purple;
+}
