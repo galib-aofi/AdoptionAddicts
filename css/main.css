@@ -1,41 +1,77 @@
-nav>ul{
-    display:flex;
-    width:2000px;
-    height:200px;
+/* === 1. Overall layout === */
+.layout {
+    display: flex;          /* Sidebar + content side by side */
+    width: 100%;
+    min-height: 100vh;      /* full screen height */
+}
 
+/* === 2. Sidebar === */
+aside {
+    width: 20%;             /* sidebar takes 20% of width */
+    background-color: darkseagreen;
+    height: 100vh;          /* full height of viewport */
+   position: fixed;        /* stays on left even if scroll */
+    top: 0;
+    left: 0;
+}
+
+aside ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
 }
-.na{
-    display:flex;
-   flex-flow:row wrap;
-    padding:10px;
-    background-color: grey;
+
+aside ul li {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid white;
+
+}
+/* if position = fixed, then we have to add margins as it will merge */
+/* === 3. Content area (nav + main) === */
+.content-area {
+    margin-left:20%;       /* move right so it’s beside sidebar */
+    width: 80%;             /* take up remaining space */
+    display: flex;
+    flex-direction: column; /* nav on top, main below */
+
+}
+
+/* === 4. Navigation bar === */
+nav ul {
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-aside>ul{
-    display:block;
+
+.na {
+    flex: 1;
+    text-align: center;
 }
-aside>ul>li{
-    display:flex;
-    flex-direction:column;
-    float:none;
-    list-style-type:none;
-    background-color: darkcyan;
-    justify-content: flex-start;
-    width:200px;
-    height:100px;
-    padding:50px;
+
+/* === 5. Main content === */
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5; /* light background for contrast */
 
 }
-a:link{
-color:blue;
-}
-a:visited{
-color:purple;
-}
-a:hover{
-color:yellow;
-}
-a:active{
-    color:red;
+
+/* === 6. Links === */
+a:link { color: blue; }
+a:visited { color: purple; }
+a:hover { color: yellow; }
+a:active { color: red; }
+header >h1,header>p{
+    text-align: center;
 }
