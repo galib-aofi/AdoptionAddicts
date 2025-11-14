@@ -1,0 +1,95 @@
+/* ---- Global Page Styling ---- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---- Form Container ---- */
+form {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* ---- Fieldset ---- */
+fieldset {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* ---- Legend ---- */
+legend {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* ---- Labels ---- */
+label {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+/* ---- Text Inputs, Email, Password, Select ---- */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[list],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* ---- File Input ---- */
+input[type="file"] {
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+
+/* ---- Radio & Checkbox Labels ---- */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* ---- Buttons ---- */
+button {
+    padding: 10px 18px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background-color: #3a86ff;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #2f6cd6;
+}
+
+/* Reset Button */
+button[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button[type="reset"]:hover {
+    background-color: #c6c6c6;
+}
