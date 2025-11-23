@@ -1,0 +1,74 @@
+/* =========================
+   GLOBAL STYLING
+========================= */
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================
+   TABLE STYLING
+========================= */
+table {
+    width: 70%;
+    margin: auto;
+    border-collapse: collapse;
+    background: #faf9f6;  /* table background */
+    border: 2px solid #cfcfcf;  /* soft gray border */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Header row */
+th {
+    background: #a3c2c2;  /* soft teal/green */
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    border: 1px solid #b0b0b0;
+    text-transform: capitalize;
+}
+
+/* First column (day names) */
+tr th:first-child {
+    background: #8aa0a0;  /* slightly darker soft teal */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Table cells - natural alternating colors */
+td {
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    background: #f5f1e8; /* soft beige / natural */
+    color: #333;
+}
+
+/* Optional: alternate row colors for readability */
+tr:nth-child(even) td {
+    background: #ede9e0; /* very soft light gray */
+}
+
+/* Hover effect */
+tr:hover td {
+    background: #e0f5f3;  /* soft teal on hover */
+    transition: 0.3s;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

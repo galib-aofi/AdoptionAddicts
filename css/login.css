@@ -1,0 +1,107 @@
+/* ===============================
+   GLOBAL PAGE STYLE
+================================*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===============================
+   HEADER
+================================*/
+header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* ===============================
+   FORM CONTAINER
+================================*/
+div {
+    background: #ffffff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    width: 550px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    /* Added border for cleaner look */
+    border: 2px solid #dcdcdc;
+}
+
+/* ===============================
+   FIELDSET & LEGEND
+================================*/
+fieldset {
+    border: 1.8px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: 600;
+    color: #34495e;
+    padding: 10px 10px;
+}
+
+/* ===============================
+   INPUT FIELDS
+================================*/
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   BUTTONS
+================================*/
+button {
+    padding: 10px 15px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Login button */
+button[type="submit"] {
+    background: #3a86ff;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background: #2f6cd6;
+}
+
+/* Forgot password button */
+button[type="button"] {
+    background: #e0e0e0;
+    color: #333;
+}
+
+button[type="button"]:hover {
+    background: #c7c7c7;
+}

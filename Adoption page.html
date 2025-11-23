@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopt Addict</title>
+    <link rel="stylesheet" href="css/ap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<header>
+    <h1>Adopt Addict</h1>
+    <p>Find your perfect companion and give them a loving home.</p>
+</header>
 
+<!-- Main Page -->
+<div id="main-page" class="page">
+    <div class="category-grid">
+        <div class="category-card" data-type="dogs">
+            <img src="https://placedog.net/400/300?id=10" alt="Dogs">
+            <h3>Dogs</h3>
+        </div>
+
+        <div class="category-card" data-type="cats">
+            <!-- FIXED IMAGE -->
+            <img src="https://loremflickr.com/400/300/kitten" alt="Cats">
+            <h3>Cats</h3>
+        </div>
+
+        <div class="category-card" data-type="birds">
+            <img src="https://loremflickr.com/400/300/bird" alt="Birds">
+            <h3>Birds</h3>
+        </div>
+        <div class="category-card" data-type="reptiles">
+            <img src="https://loremflickr.com/400/300/reptile" alt="Reptiles">
+            <h3>Reptiles</h3>
+        </div>
+    </div>
+</div>
+
+<!-- Category Page -->
+<div id="category-page" class="page" style="display:none;">
+    <button id="back-to-main" class="back-btn">← Back</button>
+    <h2 id="category-title"></h2>
+    <div id="animal-list" class="animal-grid"></div>
+</div>
+
+<!-- Animal Detail Page -->
+<div id="detail-page" class="page" style="display:none;">
+    <button id="back-to-category" class="back-btn">← Back</button>
+    <div id="animal-detail"></div>
+</div>
+
+<script src="js/adoppage.js" defer></script>
 </body>
 </html>

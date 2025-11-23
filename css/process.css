@@ -1,0 +1,307 @@
+/* Professional CSS for Adoption Process Page */
+/* Based on the clean, professional style from About Us page */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  max-width: 1000px;
+  margin: 0 auto 25px auto;
+}
+
+header h1 {
+  margin: 0 0 15px 0;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4a6cf7;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #2e4ccf;
+  background-color: #f0f3ff;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+section {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeef5;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 26px;
+  border-left: 5px solid #4a6cf7;
+  padding-left: 10px;
+  color: #333;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #333;
+  margin-top: 25px;
+}
+
+p, li {
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444;
+}
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #4a6cf7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2e4ccf;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #555;
+  font-size: 14px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Placeholder images */
+.placeholder-image {
+  background: #f7f9fc;
+  border: 1px solid #e0e6ef;
+  border-radius: 8px;
+  padding: 40px 20px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.placeholder-content .icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.placeholder-content p {
+  font-style: italic;
+  color: #666;
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Specific section styling */
+#introduction {
+  text-align: center;
+}
+
+#introduction p {
+  font-size: 18px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+#process-overview {
+  background: #f7f9fc;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #e0e6ef;
+}
+
+#process-overview ol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#process-overview ol li {
+  flex: 1;
+  min-width: 150px;
+  margin: 10px;
+  text-align: center;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#process-overview ol li a {
+  font-weight: bold;
+  display: block;
+}
+
+#process-overview p {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Step sections */
+#step1, #step2, #step3, #step4, #step5 {
+  position: relative;
+  padding-left: 20px;
+}
+
+#step1::before, #step2::before, #step3::before, #step4::before, #step5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #4a6cf7;
+  border-radius: 3px;
+}
+
+/* CTA buttons */
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #4a6cf7;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 10px 5px;
+}
+
+.cta-button:hover {
+  background: #2e4ccf;
+  color: white;
+}
+
+/* FAQ section */
+#faq h3 {
+  margin-top: 20px;
+  color: #4a6cf7;
+  border-bottom: 1px solid #eaeef5;
+  padding-bottom: 5px;
+}
+
+#faq p {
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+
+/* Get started section */
+#get-started {
+  text-align: center;
+  background: #f0f5ff;
+  padding: 30px;
+  border-radius: 8px;
+  margin-top: 40px;
+}
+
+#get-started h2 {
+  border: none;
+  text-align: center;
+  color: #4a6cf7;
+}
+
+#get-started p {
+  margin: 20px 0;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  #process-overview ol {
+    flex-direction: column;
+  }
+
+  #process-overview ol li {
+    min-width: auto;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta-button {
+    width: 80%;
+    text-align: center;
+  }
+
+  #step1, #step2, #step3, #step4, #step5 {
+    padding-left: 15px;
+  }
+}

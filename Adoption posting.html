@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/form.css">
-    <title>Post an adoption</title>
+    <link rel="stylesheet" href="css/posting.css">
+    <title>Post an Adoption</title>
 </head>
 <body>
 <main>
-<header>
-    <h1>Post an adoption</h1>
-</header>
-<form>
-    <fieldset>
-        <label for="adopt">Select the animal you want to post for adoption:</label>
-        <select id="adopt" name="animal ">
-        <option name="cat" value="cat">Cat</option>
-            <option name="dog" value="dog">Dog</option>
-            <option name="bird" value="bird">Bird</option>
-            <option name="reptile" value="reptile">Reptile</option>
+    <header>
+        <h1>Post an Adoption</h1>
+    </header>
 
-       </select><br><br>
-    <label for="species">Type in the species or breed of the animal:</label><br>
-        <input type="text" id="species" name="species"><br><br>
-        <label for="age">Age of the animal:</label><br>
-        <input type="number" id="age" name="age"><br><br>
-        <label for="img" >Insert the image of the animal.</label><br>
-        <input type="file" name="img" id="img"><br><br>
+    <form id="adoptionForm">
+        <fieldset>
+            <label for="adopt">Select the animal you want to post for adoption:</label><br>
+            <select id="adopt" name="animal" required>
+                <option value="">Select an animal</option>
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bird">Bird</option>
+                <option value="reptile">Reptile</option>
+            </select><br><br>
 
-        <label for="diseases">Diseases and special info</label>
-        <input type="text" id="diseases"><br><br>
-        <label for="description">Additional infos:</label><br>
-        <textarea id="description" rows="10" cols="150">
+            <label for="species">Species or breed:</label><br>
+            <input type="text" id="species" name="species" required><br><br>
 
-        </textarea><br><br>
-       <input type="submit" value="Submit">
+            <label for="age">Age of the animal (years):</label><br>
+            <input type="number" id="age" name="age" min="0" required><br><br>
 
-    </fieldset>
-</form>
+            <label for="img">Insert an image of the animal:</label><br>
+            <input type="file" id="img" name="img" accept="image/*" required><br><br>
+
+            <label for="diseases">Diseases and special info:</label><br>
+            <input type="text" id="diseases" name="diseases"><br><br>
+
+            <label for="description">Additional info:</label><br>
+            <textarea id="description" name="description" rows="6" cols="80" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
 </main>
+
 <footer>
-    <p><b>*Rest of the information will be exchanged through texts between the poster and
-        the adopter*</b></p>
+    <p><b>*Rest of the information will be exchanged through texts between the poster and the adopter*</b></p>
 </footer>
 
-
+<!-- Add the JS file just before the closing body tag -->
+<script src="js/AP.js"></script>
 </body>
 </html>

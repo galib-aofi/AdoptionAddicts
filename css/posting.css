@@ -1,0 +1,89 @@
+/* Simplified, professional, easy-to-read CSS (no variables) */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f4f7;
+  color: #222;
+  padding: 40px 20px;
+}
+
+main {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #cfd4dc;
+  font-size: 15px;
+  background: #fff;
+}
+
+input[type="file"] {
+  padding: 10px;
+  border: 1px solid #cfd4dc;
+  background: #fff;
+  border-radius: 8px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+input[type="submit"] {
+  width: 180px;
+  background: #4a6cf7;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+input[type="submit"]:hover {
+  background: #3c59d9;
+}
+
+footer {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 14px;
+  color: #555;
+}

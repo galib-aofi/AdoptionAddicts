@@ -7,37 +7,39 @@
     <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
-<form>
+
+<form id="registerForm">
     <fieldset>
         <legend>Personal Information</legend>
 
         <label for="first_name">First name:</label><br>
-        <input type="text" id="first_name" name="first_name"><br><br>
+        <input type="text" id="first_name" name="first_name" required><br><br>
 
         <label for="last_name">Last name:</label><br>
-        <input type="text" id="last_name" name="last_name"><br><br>
+        <input type="text" id="last_name" name="last_name" required><br><br>
 
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" name="email" required><br><br>
 
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br><br>
+        <input type="password" id="password" name="password" minlength="6" required><br><br>
 
         <label for="num">Cell number:</label><br>
-        <input type="text" id="num" name="num"><br><br>
+        <input type="tel" id="num" name="num" pattern="[0-9]{11}" placeholder="e.g., 017xxxxxxxx" required><br><br>
 
         <label for="pic">Upload your image:</label><br>
-        <input type="file" id="pic" name="pic" accept="image/*"><br><br>
+        <input type="file" id="pic" name="pic" accept="image/*" required><br><br>
 
-        <input type="radio" id="sex1" name="sex" value="male">
+        <label>Gender:</label><br>
+        <input type="radio" id="sex1" name="sex" value="male" required>
         <label for="sex1">Male</label>
 
         <input type="radio" id="sex2" name="sex" value="female">
         <label for="sex2">Female</label>
         <br><br>
 
-        <label>Enter your city:</label>
-        <input list="city" name="city">
+        <label for="cityInput">Enter your city:</label><br>
+        <input list="city" name="city" id="cityInput" required>
         <datalist id="city">
             <option>Dhaka</option>
             <option>Chittagong</option>
@@ -64,7 +66,7 @@
         <br><br>
 
         <label for="numsofpet">Number of pets you currently have:</label><br>
-        <select id="numsofpet" name="numsofpet">
+        <select id="numsofpet" name="numsofpet" required>
             <option value="none">None</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -77,5 +79,7 @@
         <button type="reset">Reset</button>
     </fieldset>
 </form>
+
+<script src="script.js"></script>
 </body>
 </html>

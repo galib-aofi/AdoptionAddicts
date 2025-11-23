@@ -1,0 +1,92 @@
+/* ===============================
+   GLOBAL PAGE SETTINGS
+================================*/
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* ===============================
+   HEADER
+================================*/
+header h1 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* ===============================
+   MAIN BOX / FIELDSET
+================================*/
+div {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+fieldset {
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #dcdcdc;
+    background: white;
+
+    /* Soft shadow */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+fieldset p {
+    color: #333;
+    font-weight: 600;
+}
+
+/* ===============================
+   BUTTONS
+================================*/
+button {
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Login button */
+button[type="button"] {
+    background: #3a86ff;
+    color: #fff;
+    width: 70%;
+}
+
+button[type="button"]:hover {
+    background: #2f6cd6;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+/* ===============================
+   HORIZONTAL LINE + FOOTER
+================================*/
+hr {
+    width: 80%;
+    margin: 30px auto;
+    border: 1px solid #ddd;
+}
+
+footer p {
+    color: #666;
+    margin-bottom: 30px;
+}
